@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.281/build/spline-viewer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+<body>
+
+
+
+
+
+  <div class="header-banner-container">
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"><img src="Imagenes\Logo.png" alt="Logo de Hato"></a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#nosotros" class="neon-link">Nosotros</a></li>
+            <li><a href="#beneficios" class="neon-link">Beneficios</a></li>
+            <li><a href="#precios" class="neon-link">Precios</a></li>
+            <li><a href="#equipo" class="neon-link">Equipo</a></li>
+            <li><a href="#contacto" class="neon-link">Contacto</a></li>
+          </ul>
+        </nav>        
+      </div>
+    </header>    
+
+
+
+
+
+    <section class="banner">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h1>Obtén el <span class="flicker">máximo</span> beneficio<br>de cada habitación con nosotros</h1>
+          <a href="booking.html" class="cta-button neon">Quiero saber más</a>
+        </div>
+          <spline-viewer loading-anim url="https://prod.spline.design/4b27ANBJxItApnxn/scene.splinecode"></spline-viewer>
+      </div>
+    </section>   
+  </div> 
+  
+
+
+
+  
+    <section class="about-us" id="nosotros">
+      <h2 class="about-us-title">Nosotros</h2>
+      <div class="about-us-content">
+        <div class="about-us-text">
+          <p>
+            Hato es un innovador sistema diseñado para mejorar la administración y gestión en hostales. Nuestra herramienta se centra en optimizar el flujo laboral, proporcionar datos en tiempo real sobre el estado de las habitaciones y acelerar tanto los procesos de check-in como la asistencia al cliente.
+          </p>
+        </div>
+      </div>
+    </section>    
+
+
+
+
+
+<section class="services" id="beneficios">
+  <h2 class="services-title">Servicios</h2>
+  <div class="services-container">
+    <div class="service">
+      <img src="Imagenes\Principal2.png" alt="Descripción del servicio 1">
+      <div class="service-content">
+        <h3 class="service-title">Gestión centralizada para tu hostal</h3>
+        <p>Administra fácilmente todos los aspectos de tu hotel desde una sola plataforma, permitiendo un mejor control y eficiencia en la toma de decisiones.</p>
+      </div>
+    </div>
+    <div class="service">
+      <img src="Imagenes\Limpieza2.jpg" alt="Descripción del servicio 2">
+      <div class="service-content">
+        <h3 class="service-title">Comunicación eficiente entre el personal</h3>
+        <p>Mantén a tu equipo informado sobre las necesidades de mantenimiento y las solicitudes de servicio al cliente en tiempo real, mejorando la colaboración y la eficiencia del personal.</p>
+      </div>
+    </div>
+    <div class="service">
+      <img src="Imagenes\Asequible.jpg" alt="Descripción del servicio 3">
+      <div class="service-content">
+        <h3 class="service-title">Solución asequible y fácil de usar</h3>
+        <p>Hato es una herramienta de bajo costo y fácil de aprender en comparación con otras opciones en el mercado, lo que la convierte en la solución ideal para hostales dde todo tamaño.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="pricing" id="precios">
+  <h1 class="pricing-title">Precios</h1>
+  <div class="pricing-container">
+    <div class="question-container">
+      <h3>¿Cuántas habitaciones tienes?</h3>
+      <input type="number" id="room-count" min="0" value="0">
+    </div>
+    <div class="price-container">
+      <h3>Precios desde S/ 7.00 por habitación</h3>
+      <div class="total-price">
+        <h2 id="price">S/ 0.00</h2>
+      </div>
+      <button class="subscribe-button neon cta-button">Subscribirse</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="team" id="equipo">
+  <h1 class="team-title">Nuestro equipo</h1>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="Imagenes/Josef.jpg" alt="Josef">
+      <p>Josef</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes/Shayla.jpg" alt="Shayla">
+      <p>Shayla</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes\Luis.jpg" alt="Luis">
+      <p>Luis</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes\Miguel.jpg" alt="Miguel">
+      <p>Miguel</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes\Ronald.jpg" alt="Ronald">
+      <p>Ronald</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="contact" id="contacto">
+  <h1 class="contact-title">Contacto</h1>
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Mensaje</label>
+      <textarea id="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="cta-button neon">Enviar</button>
+  </form>
+  <div class="social-media">
+    <h3>Síguenos</h3>
+    <div class="social-icons">
+      <a href="#"><img src="Imagenes/facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="Imagenes/twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="Imagenes/instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+  <p>Todas las imágenes acerca del producto final y las declaraciones de funcionalidades están sujetas a cambio sin previo aviso y bajo ningún concepto son representativas del producto final. Copyright Grupo 4 UPC @Hato</p>
+</footer>
+
+
+
+
+
+</body>
+</html>
